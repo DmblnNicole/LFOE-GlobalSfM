@@ -1,0 +1,32 @@
+# build
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/cmake_install.cmake
+
+# python
+__pycache__/
+/*.pyc
+/*.pyo
+/*.pyd
+/.pytest_cache
+/.mypy_cache
+
+# torch
+~/.cache/torch/
+~/.torch/
+
+# vscode settings
+.vscode/
+
+*.log
+*.bak
+*.swp
+*.tmp
+.DS_Store
+Thumbs.db
+
+# git submodules
+external/*
+!external/.gitmodules

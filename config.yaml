@@ -1,0 +1,32 @@
+node_classifier:
+  in_channels: 12   # relative rotation and relative translation
+  edge_dim: 393     # img embeddings and absolute rotation
+  heads: 8
+  hidden_dim: 8
+  beta_conv1: false
+  beta_conv2: false
+  beta_conv3: true
+  dropout_conv1: 0.1
+  dropout_conv2: 0.1
+  dropout_conv3: 0.1
+  dropout_1: 0.3
+  dropout_2: 0.3
+  use_cuda : true
+
+img_embeds:
+  model: dino_vits16
+  source: facebookresearch/dino:main
+  input_size: [224, 224]
+  normalize_mean: [0.485, 0.456, 0.406]
+  normalize_std: [0.229, 0.224, 0.225]
+  use_cuda: true
+
+clustering:
+  output_path: "cluster.txt"      
+  init_num_clusters: 3            # default starting value for clustering
+  max_edges_in_linegraph: 3000000 # set based on your memory constrains
+
+filter:
+  viewgraph_output: "viewgraph.bin"
+  rotations_output: "rotations.bin"
+  model_path: "../model/node_classifier.pth"

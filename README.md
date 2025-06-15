@@ -12,8 +12,8 @@ This project extends GLOMAP with an outlier filter for relative translations in 
 
 2. [GLOMAP](https://github.com/colmap/glomap) is integrated as a submodule in external/glomap:
     ```bash
-    git clone git@github.com:DmblnNicole/lfoe.git
-    cd lfoe
+    git clone git@github.com:DmblnNicole/LFOE-GlobalSfM.git
+    cd LFOE-GlobalSfM
     git submodule init
     git submodule update
     ```

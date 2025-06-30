@@ -16,6 +16,8 @@
 #include <colmap/util/file.h>
 #include <colmap/util/timer.h>
 
+// Code adapted from https://github.com/colmap/glomap
+
 namespace glomap {
 
 bool GlobalMapperFilter::Solve(const colmap::Database& database,

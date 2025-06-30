@@ -8,6 +8,8 @@
 #include <colmap/util/misc.h>
 #include <colmap/util/timer.h>
 
+// Code adapted from https://github.com/colmap/glomap
+
 namespace glomap {
 
 // -------------------------------------

@@ -10,9 +10,9 @@ namespace {
 using command_func_t = std::function<int(int, char**)>;
 
 int ShowHelp(const std::vector<std::pair<std::string, command_func_t>>& commands) {
-  std::cout << "GLOMAP Filter - Run with filtering options\n\n";
+  std::cout << "GLOMAP with translation outlier filter\n\n";
   std::cout << "Usage:\n";
-  std::cout << "  glomap_filter mapper --database_path ...\n";
+  std::cout << "  glomap_filter mapper --database_path ... --output_path ...\n";
   std::cout << "\nAvailable commands:\n";
   for (const auto& cmd : commands) {
     std::cout << "  " << cmd.first << '\n';
